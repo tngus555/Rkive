@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>company|</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+  </head>
+  <body>
+    <!-- a.hidden{본문바로가기} -->
+    <a href="#main" class="hidden">본문바로가기</a>
+    <hr />
+
+    <!-- s:header -->
+    <!-- header#geader.header+main#main.main
+     +footer#footer.footer -->
+    <header id="header" class="header">
+      <div class="inner">
+        <nav>
+          <!-- h1.logo>a{imaginary} -->
+          <h1 class="logo">
+            <a href="./index.html"><i class="hidden">imaginary</i></a>
+          </h1>
+          <!-- ul.gnb>li*4>a -->
+          <ul class="gnb">
+            <li>
+              <a href="company.html"><span>company</span></a>
+            </li>
+            <li>
+              <a href="franchise.html"><span>franchise</span></a>
+            </li>
+            <li>
+              <a href="notice.html"><span>notice</span></a>
+            </li>
+            <li>
+              <a href="financial.html"><span>financial</span></a>
+            </li>
+          </ul>
+          <!-- .util-menu>a.login -->
+          <div class="util-menu">
+            <a href="login.html" class="login">
+              <a href="./index.html"></a><i class="hidden">로그인</i></a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- // e: header -->
+    <hr />
+    <!-- s:main -->
+    <main id="main" class="sub-main company">
+      <!-- s:sub-visual -->
+
+      <!-- section.sub-visual -->
+      <section class="sub-visual">
+        <h2>company</h2>
+      </section>
+
+      <section class="greeting">
+        <div class="inner">
+          <h3 class="sec-title">CEO 인사말</h3>
+          <div class="greeting-con">
+            <figure class="greeting-img">
+              <img src="img/ceo-pic.jpg" alt="CEO 사진" />
+            </figure>
+            <div class="greeting-txt">
+              <h4>좋은 친구 같은 기업 HYBE</h4>
+              <h5>HYBE를 사랑해주는 고객 여러분, 안녕하십니까?</h5>
+              <p>
+                하이브(HYBE)는 “We believe in music”이라는 미션 아래 음악 산업의
+                비즈니스 모델을 혁신하는 기업입니다. 하이브는 음악에 기반한 세계
+                최고의 엔터테인먼트 라이프스타일 플랫폼 기업을 지향합니다.
+                글로벌 트렌드를 이끄는 '콘텐츠'와 우리의 고객인 '팬'을 최우선
+                가치로 두고, 높은 기준과 끊임없는 개선으로 고객을 만족시키도록
+                노력하고 있습니다.
+              </p>
+              <p>
+                HYBE CI에는 HYBE의 기반인 음악을 담았습니다. 오선보가 압축된
+                형태인 가로선은 악보에서 세로줄을 상징하는 두 개의 바를 연결하고
+                유연함을 기반으로 다양하게 변주, 확장합니다.
+              </p>
+              <p>
+                음악으로 세상에 울림을 전하고 산업을 혁신하여 삶의 변화를
+                만들어갑니다.
+              </p>
+              <div class="greeting-sign">
+                <img src="./img/rm-sign.png" alt="rm sign" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section.map>h3+.map-wrap -->
+      <section class="map">
+        <h3 class="sec-title">찾아오시는 길</h3>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202504.0766876856!2d126.75816518681702!3d37.52852233233416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1adbde4193d%3A0xb66b720a6871a40a!2z7ZWY7J2067iMIOuzuOyCrA!5e0!3m2!1sko!2skr!4v1756177494300!5m2!1sko!2skr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <!-- // e: main -->
+    <hr />
+    <!-- s:footer -->
+    <footer id="footer" class="footer">
+      <!-- .inner>.foot-logo+address+p.copyright -->
+      <div class="inner">
+        <div class="foot-logo"><i class="hidden">imaginary</i></div>
+        <address>
+          <!-- dl>(dt+dd)*4 -->
+          <dl>
+            <dt>address</dt>
+            <dd>서울특별시 용산구 한강대로 42</dd>
+
+            <dt>tel</dt>
+            <dd>02-3444-0105</dd>
+
+            <dt>fax</dt>
+            <dd>02-3444-0112</dd>
+
+            <dt>e-mail</dt>
+            <dd>privacy@hybecorp.com</dd>
+          </dl>
+        </address>
+        <p class="copyright">© HYBE. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- // e: footer -->
+    <!-- button:button.btn-top{TOP} -->
+    <button type="button" class="btn-top"><i class="hidden">TOP</i></button>
+    <script src="js/common.js"></script>
+  </body>
+</html>

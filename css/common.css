@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/* Pretendard 웹폰트 적용 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+:root {
+  font-size: 100%;
+  --main-color: #12562f;
+  --title-color: #232f28;
+  --text-color: #666;
+  --point-color: #a0ffc8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+body {
+  font: 1rem/1.5 "Pretendard", "맑은 고딕", "Malgun Gothic",
+    "Apple SD Gothic Neo", Arial, sans-serif;
+}
+
+hr,
+.hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  clip-path: inset(100);
+}
+
+.header {
+  height: 100px;
+  /* background: red; */
+}
+.logo a {
+  width: 179px;
+  height: 50px;
+  background: url(../img/logo.svg) no-repeat 0 0;
+  display: block;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.gnb {
+  display: flex;
+}
+.gnb li a {
+  display: block; /* 글자 길이에만 맞게 */
+  padding: 10px 30px;
+  /* border: 1px solid #000; */
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+.gnb li a span {
+  position: relative;
+  display: inline-block; /* 글자 길이에 맞게 */
+}
+
+.gnb li a span::after {
+  content: "";
+  position: absolute; /* posa 절대 배치 */
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--main-color);
+  transition: 0.4s; /* trs.4s */
+}
+.gnb li a:hover span::after {
+  width: 100%;
+}
+.login {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid var(--main-color);
+  background: url(../img/ico-login.svg) no-repeat 50% 50%;
+}
+
+footer {
+  background: #232f28;
+  color: #fff;
+  padding: 77px 0;
+}
+.foot-logo {
+  background: url(../img/logow.svg) no-repeat 0 0;
+  width: 179px;
+  height: 50px;
+}
+address dl {
+  /* background: yellowgreen; */
+  display: flex;
+  margin-top: 30px;
+  gap: 8px 16px;
+  flex-wrap: wrap; /* fxww 줄바꿈 */
+  width: 330px;
+  opacity: 0.6;
+}
+address dl dt {
+  /* border: 1px solid red; */
+  width: 65px;
+  font-weight: 700;
+}
+address dl dd {
+  /* border: 1px solid blue; */
+  width: calc(100% - 65px - 16px);
+}
+
+.copyright {
+  margin-top: 30px;
+  font-weight: 700;
+  text-transform: lowercase; /* ttl 모든 글자를 소문자로 변경 */
+}
+.btn-top {
+  position: fixed; /* posf  */
+  /* b227+r290+w54+h54+bdrs50p+bg#000 */
+  bottom: 227px;
+  right: 290px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #93b899 url(../img/ico-intro4.svg) no-repeat 50%;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.btn-top.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* 공통 버튼 스타일 (common.css) */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--main-color);
+  transition: 0.4s;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* 위치 관련 margin은 제거 */
+}
+
+/* 버튼 묶음 전용 컨테이너 */
+.btn-container {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  gap: 20px; /* 버튼 간격 */
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* 단일 버튼만 있을 경우 (컨테이너가 없을 때 대비) */
+.btn.center {
+  margin: 30px auto; /* 버튼 하나만 있을 때는 가운데 정렬 */
+  display: block;    /* flex에서 block으로 전환 */
+}
+
+.btn:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+.btn::after {
+  content: "";
+  display: inline-block; /* 인라인처럼 옆으로 배치되지만, block처럼 width/height를 가질 수 있게 해주는 속성 */
+  width: 24px;
+  height: 24px;
+  background: url(../img/ico-arrow-right.svg) no-repeat center;
+}
