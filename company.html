@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>company|</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/sub.css" />
@@ -61,12 +62,12 @@
 
       <section class="greeting">
         <div class="inner">
-          <h3 class="sec-title">CEO 인사말</h3>
-          <div class="greeting-con">
-            <figure class="greeting-img">
+          <h3 class="sec-title" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-mirror="true">CEO 인사말</h3>
+          <div class="greeting-con" >
+            <figure class="greeting-img" data-aos="flip-left">
               <img src="img/ceo-pic.jpg" alt="CEO 사진" />
             </figure>
-            <div class="greeting-txt">
+            <div class="greeting-txt" >
               <h4>좋은 친구 같은 기업 HYBE</h4>
               <h5>HYBE를 사랑해주는 고객 여러분, 안녕하십니까?</h5>
               <p>
@@ -95,7 +96,7 @@
       </section>
       <!-- section.map>h3+.map-wrap -->
       <section class="map">
-        <h3 class="sec-title">찾아오시는 길</h3>
+        <h3 class="sec-title" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-mirror="true">찾아오시는 길</h3>
         <div class="map-wrap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202504.0766876856!2d126.75816518681702!3d37.52852233233416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1adbde4193d%3A0xb66b720a6871a40a!2z7ZWY7J2067iMIOuzuOyCrA!5e0!3m2!1sko!2skr!4v1756177494300!5m2!1sko!2skr"
@@ -136,5 +137,9 @@
     <!-- button:button.btn-top{TOP} -->
     <button type="button" class="btn-top"><i class="hidden">TOP</i></button>
     <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
