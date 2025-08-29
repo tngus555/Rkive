@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HYBE HYBE</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -94,7 +95,9 @@
           <!-- ul.intro-list>li*3>dl>dt+dd -->
           <ul class="intro-list">
             <li>
-              <dl>
+              <dl data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                 <dt>활동그룹</dt>
                 <dd>
                   방탄소년단<br />
@@ -103,7 +106,9 @@
               </dl>
             </li>
             <li>
-              <dl>
+              <dl data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" data-aos-delay="600">
                 <dt>나이</dt>
                 <dd>
                   1994년<br />
@@ -112,7 +117,9 @@
               </dl>
             </li>
             <li>
-              <dl>
+              <dl data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" data-aos-delay="1200">
                 <dt>소속사</dt>
                 <dd>HYBE</dd>
               </dl>
@@ -129,15 +136,19 @@
         <!-- ul.link-list>li*2>a>div.link-title>h4+p -->
         <ul class="link-list">
           <li>
-            <a href="#">
-              <div class="link-title">
+            <a href="#" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+              <div class="link-title" >
                 <h4>Indigo</h4>
                 <p>2022년</p>
               </div>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
               <div class="link-title">
                 <h4>Right Place, Wrong Person</h4>
                 <p>2024년</p>
@@ -178,5 +189,9 @@
     <!-- button:button.btn-top{TOP} -->
     <button type="button" class="btn-top"><i class="hidden">TOP</i></button>
     <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
